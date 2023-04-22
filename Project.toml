@@ -1,0 +1,13 @@
+name = "JuliaROS"
+uuid = "76c30fe8-05e9-4d1e-adad-6c7381f0e2b4"
+authors = ["Benjamin Chung"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
