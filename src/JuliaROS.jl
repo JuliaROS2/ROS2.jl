@@ -1,5 +1,8 @@
 module JuliaROS
 
-# Write your package code here.
+module Librcl
+include("findROS.jl")
+include("gen/libros.jl")
+end
 
 end

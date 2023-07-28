@@ -1,0 +1,18 @@
+[general]
+export_symbol_prefixes = ["CX", "rcl_"]
+output_ignorelist = ["static_assert", "my__has_feature", "RCUTILS_PUBLIC", 
+    "ATOMIC_FLAG_INIT", "RMW_SAFE_FWRITE_TO_STDERR", 
+    "RMW_WARN_UNUSED", "RCUTILS_WARN_UNUSED", "RCL_WARN_UNUSED",
+    "RMW_DURATION_INFINITE", "RMW_DURATION_UNSPECIFIED",
+    "RMW_QOS_DEADLINE_DEFAULT",
+    "RMW_QOS_LIFESPAN_DEFAULT",
+    "RMW_QOS_LIVELINESS_LEASE_DURATION_DEFAULT",
+    "RCL_S_TO_NS", "RCL_MS_TO_NS", "RCL_US_TO_NS", "RCL_NS_TO_S", "RCL_NS_TO_MS", "RCL_NS_TO_US"]
+prologue_file_path = "./preamble.jl"
+epilogue_file_path = "./postamble.jl"
+smart_de_anonymize = true
+library_name = "librcl"
+library_names = { ".*/rcutils/.*.h" = "librcutils", ".*/rosidl_generator_c/.*.h" = "librosidl_generator_c", ".*/rosidl_runtime_c/.*.h" = "librosidl_runtime_c", ".*/rosidl_typesupport_introspection_c/.*.h" = "librosidl_typesupport_introspection_c", ".*/rosidl_typesupport_c/.*.h" = "rosidl_typesupport_c", ".*/rosidl_typesupport_interface/.*.h" = "librosidl_typesupport_interface", ".*/rcl_yaml_param_parser/.*.h" = "librcl_yaml_param_parser", ".*/rmw/.*.h" = "librmw", ".*/rcl/.*.h" = "librcl" }
+
+[codegen]
+use_julia_bool = true
