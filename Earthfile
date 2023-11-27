@@ -29,4 +29,5 @@ tests:
     FROM +code
     WORKDIR /workspaces/ROS2.jl
     RUN ["/bin/bash", "-c", "\"source /ros_entrypoint.sh && printenv | grep ROS \""]
-    RUN ["/bin/bash", "-c", "\"source /ros_entrypoint.sh && ~/.julia/juliaup/julia-1.9.2+0.x64.linux.gnu/bin/julia --project=. --eval \\\"import Pkg; Pkg.test()\\\" \""]
+    # TODO the glob here is bad. Related to inability to setting PATH.
+    RUN ["/bin/bash", "-c", "\"source /ros_entrypoint.sh && ~/.julia/juliaup/julia-1.9.*/bin/julia --project=. --eval \\\"import Pkg; Pkg.test()\\\" \""]
