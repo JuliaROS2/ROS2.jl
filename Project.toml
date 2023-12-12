@@ -9,6 +9,7 @@ Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
 ParserCombinator = "fae87a5f-d1ad-5cf0-8f61-c941e1580b46"
 
 [compat]
+CEnum = "0.5"
 julia = "1"
 
 [extras]
