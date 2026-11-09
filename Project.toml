@@ -1,7 +1,7 @@
 name = "JuliaROS"
 uuid = "76c30fe8-05e9-4d1e-adad-6c7381f0e2b4"
-authors = ["Benjamin Chung"]
 version = "1.0.0-DEV"
+authors = ["Benjamin Chung"]
 
 [deps]
 CEnum = "fa961155-64e5-5f13-b03f-caf6b980ea82"
@@ -9,6 +9,7 @@ Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
 ParserCombinator = "fae87a5f-d1ad-5cf0-8f61-c941e1580b46"
 
 [compat]
+ParserCombinator = "2"
 julia = "1"
 
 [extras]
